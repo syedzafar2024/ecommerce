@@ -12,7 +12,7 @@ interface SidebarProps {
   recentPosts: { title: string; link: string }[];
 }
 
-const Sidebar: React.FC<SidebarProps> = ({ categories, recentPosts }) => {
+const Sidebar: React.FC<SidebarProps> = ({ }) => {
   return (
     <div className="sidebar">
       <div className="right side">

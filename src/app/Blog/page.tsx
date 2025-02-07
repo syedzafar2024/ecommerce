@@ -12,11 +12,8 @@ import { FaTags } from "react-icons/fa6";
 import pic002 from "../../../public/img/Rectangle 14.png";
 import pic003 from "../../../public/img/Rectangle 15.png";
 
-interface Props {
-  params: { singleproduct: string };
-}
 
-export default function Blog() {
+export default function Blog(): React.JSX.Element {
   const breadcrumbs = [{ name: "Home", link: "/" }, { name: "Blog" }];
 
   return (

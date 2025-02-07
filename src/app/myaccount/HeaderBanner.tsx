@@ -10,10 +10,10 @@ type Breadcrumb = {
 type Props = {
   title: string;
   breadcrumbs: Breadcrumb[];
-  backgroundImage: string;
+
 };
 
-const HeaderBanner: React.FC<Props> = ({ title, breadcrumbs, backgroundImage }) => {
+const HeaderBanner: React.FC<Props> = ({ title, breadcrumbs, }) => {
   return (
     <div
     className="relative bg-[#FAF4F4] w-[1440px] h-[316px] text-center py-32"

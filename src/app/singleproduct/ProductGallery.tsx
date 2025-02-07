@@ -24,7 +24,7 @@ const ProductGallery: React.FC<ProductGalleryProps> = ({ images }) => {
       </div>
       {/* Main Image */}
       <div className="ml-4">
-        <img src={selectedImage} alt="Selected" className="w-96 h-96 object-cover" />
+        <img src={"/img/"} alt="Selected" className="w-96 h-96 object-cover" />
       </div>
     </div>
   );

@@ -4,8 +4,6 @@ import ProductDetails from "../app/singleproduct/ProductDetails";
 
 const ProductPage: React.FC = () => {
   const images = ["/img/Group 94.png", "/img/Group 98.png", "/img/Group 97.png","/img/Group 96.png"];
-  const colors = ["#000000", "#FFD700", "#800080"];
-  const sizes = ["L", "XL", "XS"];
 
   return (
     <div className="flex gap-8 p-8">

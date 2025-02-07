@@ -3,8 +3,7 @@ import { useState } from "react";
 
 export default function ProductDetailsTabs() {
   const [activeTab, setActiveTab] = useState("description");
-
-  const renderTabContent = () => {
+  function renderTabContent() {
     switch (activeTab) {
       case "description":
         return (
@@ -44,7 +43,7 @@ export default function ProductDetailsTabs() {
       default:
         return null;
     }
-  };
+  }
 
   return (
     <div className="product-details-tabs flex gap-5 mb-5">

@@ -35,7 +35,7 @@ export default async function Home() {
       <div>
         <h1>Products</h1>
         <ul>
-          {products.map((product: any) => (
+          {products.map((product:any) => (
             <li key={product._id}>
               <h2>{product.name}</h2>
               <p>{product.description}</p>

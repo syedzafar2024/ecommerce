@@ -15,33 +15,9 @@ interface SidebarProps {
 const Sidebar: React.FC<SidebarProps> = ({ categories, recentPosts }) => {
   return (
     <div className="sidebar">
-      {/* <div className="categories">
-      <aside className="flex-[1]">
-           <p className="text-gray-700">Sidebar Content Here</p>
-    </aside>
-        <h3>Categories</h3>
-        <ul>
-          {categories.map((category, index) => (
-            <li key={index}>
-              <a href="#">{category}</a>
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div className="recent-posts">
-        <h3>Recent Posts</h3>
-        <ul>
-          {recentPosts.map((post, index) => (
-            <li key={index}>
-              <a href={post.link}>{post.title}</a>
-            </li>
-          ))}
-        </ul>
-      </div> */}
       <div className="right side">
         <div className=" flex h-12">
           <input className="border border-gray-500 px-10 border-r-0 rounded-l-[10px]"></input>
-          {/* <div className="p-2 text-3xl border border-gray-500 border-l-0 rounded-r-[10px]"><IoSearchOutline/> */}
         </div>
       </div>
       <p className="text-[24px] font-medium leading-[36px] ml-10 my-10">

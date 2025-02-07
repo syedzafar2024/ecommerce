@@ -10,7 +10,7 @@ export async function generateStaticParams() {
     }
   `);
 
-  return products.map((product: any) => ({
+  return products.map((product:any) => ({
     slug: product.slug.current,
   }));
 }

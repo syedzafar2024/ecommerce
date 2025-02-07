@@ -15,7 +15,7 @@ export default function MyAccount() {
       <HeaderBanner
         title="My Account"
         breadcrumbs={breadcrumbs}
-        backgroundImage="/img/Rectangle 1.png"
+      
       />
       <AuthPage />
       <HomePage />

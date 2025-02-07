@@ -12,7 +12,7 @@ interface BlogCardProps {
 const BlogCard: React.FC<BlogCardProps> = ({ image, title, description, date, author }) => {
   return (
     <div className="blog-card text-gray-700 ">
-      <img src={image} alt={title} className="blog-image" />
+      <img src={"/img/Rectangle 13.png"} alt={title} className="blog-image" />
       <div className="blog-content">
         <h2 className="blog-title">{title}</h2>
         <div className="blog-meta">

@@ -10,7 +10,7 @@ const Toolbar: React.FC = () => {
   const [view, setView] = useState<"grid" | "list">("grid");
   const [itemsPerPage, setItemsPerPage] = useState<number>(16);
   const [sortBy, setSortBy] = useState<string>("default");
-  const [currentRange, setCurrentRange] = useState<string>("1–16");
+  const [currentRange] = useState<string>("1–16");
   const [totalResults] = useState<number>(32); // Example total results
 
   const handleFilterClick = () => {

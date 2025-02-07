@@ -1,49 +1,49 @@
-// src/app/products/[slug]/page.tsx
-import { client } from '../../../sanity/lib/sanity';
+// // src/app/products/[slug]/page.tsx
+// import { client } from '../../../sanity/lib/sanity';
 
-export async function generateStaticParams() {
-  const products = await client.fetch(`
-    *[_type == "product"] {
-      slug {
-        current
-      }
-    }
-  `);
+// export async function generateStaticParams() {
+//   const products = await client.fetch(`
+//     *[_type == "product"] {
+//       slug {
+//         current
+//       }
+//     }
+//   `);
 
-  return products.map((product:any) => ({
-    slug: product.slug.current,
-  }));
-}
+//   return products.map((product:any) => ({
+//     slug: product.slug.current,
+//   }));
+// }
 
-export default async function ProductPage({ params }: { params: { slug: string } }) {
-  const product = await client.fetch(
-    `
-    *[_type == "product" && slug.current == $slug][0] {
-      _id,
-      name,
-      slug,
-      price,
-      description,
-      "imageUrl": imagePath.asset->url,
-      discountPercentage,
-      isFeaturedProduct,
-      stockLevel,
-      category
-    }
-  `,
-    { slug: params.slug }
-  );
+// export default async function ProductPage({ params }: { params: { slug: string } }) {
+//   const product = await client.fetch(
+//     `
+//     *[_type == "product" && slug.current == $slug][0] {
+//       _id,
+//       name,
+//       slug,
+//       price,
+//       description,
+//       "imageUrl": imagePath.asset->url,
+//       discountPercentage,
+//       isFeaturedProduct,
+//       stockLevel,
+//       category
+//     }
+//   `,
+//     { slug: params.slug }
+//   );
 
-  return (
-    <div>
-      <h1>{product.name}</h1>
-      <p>{product.description}</p>
-      <p>Price: ${product.price}</p>
-      <img src={product.imageUrl} alt={product.name} />
-      <p>Category: {product.category}</p>
-    </div>
-  );
-}
+//   return (
+//     <div>
+//       <h1>{product.name}</h1>
+//       <p>{product.description}</p>
+//       <p>Price: ${product.price}</p>
+//       <img src={product.imageUrl} alt={product.name} />
+//       <p>Category: {product.category}</p>
+//     </div>
+//   );
+// }
 
 
 

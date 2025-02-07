@@ -34,7 +34,7 @@ export default async function Home() {
       <CardList />
       <div>
         <h1>Products</h1>
-        <ul>
+        {/* <ul>
           {products.map((product:any) => (
             <li key={product._id}>
               <h2>{product.name}</h2>
@@ -44,7 +44,7 @@ export default async function Home() {
               <p>Category: {product.category}</p>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </div>
 
       <SectionHeader />

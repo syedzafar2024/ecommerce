@@ -1,5 +1,5 @@
 import React from "react";
-import SizeSelector from "./SizeSelector";
+// import SizeSelector from "./SizeSelector";
 import ColorSelector from "./ColorSelector";
 import QuantitySelector from "./QuantitySelector";
 import SocialShare from "./SocialShare";
@@ -20,7 +20,6 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
   description,
   rating,
   reviews,
-  sizes,
   colors,
 }) => {
   return (
@@ -40,7 +39,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({
       <p className="mt-4 text-gray-700">{description}</p>
 
       {/* Size Selector */}
-      <SizeSelector sizes={sizes} />
+      {/* <SizeSelector sizes={sizes} /> */}
 
       {/* Color Selector */}
       <ColorSelector colors={colors} />

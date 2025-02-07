@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/navbar";
 import React from "react";
-import ProductDetailsTabs from "../singleproduct/ProductDetailsTabs";
+// import ProductDetailsTabs from "../singleproduct/ProductDetailsTabs";
 import ProductGrid from "@/components/ProductGrid";
 import ProductPage from "@/pages/ProductPage";
 import CartPage from "@/pages/cart";
@@ -11,7 +11,7 @@ const cartsidebar = () => {
       <Navbar />
       <CartPage />
       <ProductPage />
-      <ProductDetailsTabs />
+      {/* <ProductDetailsTabs /> */}
       <ProductGrid />
       <Footer />
     </div>

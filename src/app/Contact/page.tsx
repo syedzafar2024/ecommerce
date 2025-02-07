@@ -14,7 +14,6 @@ export default function Contact() {
       <HeaderBanner
         title="Contact"
         breadcrumbs={breadcrumbs}
-        backgroundImage="/img/Rectangle 1.png"
       />
       <ContactPage />
       <HomePage />

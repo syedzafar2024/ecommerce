@@ -22,7 +22,6 @@ import pic14 from "../../../public/img/Mask group (12).png";
 import pic15 from "../../../public/img/Mask group (13).png";
 import pic16 from "../../../public/img/Mask group (14).png";
 
-
 export default function Shop() {
   const breadcrumbs = [{ name: "Home", link: "/" }, { name: "Shop" }];
 

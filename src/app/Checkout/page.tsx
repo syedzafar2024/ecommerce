@@ -14,7 +14,6 @@ export default function Checkout() {
       <HeaderBanner
         title="Checkout"
         breadcrumbs={breadcrumbs}
-        backgroundImage="/img/Rectangle 1.png"
       />
       <BillingPage />
       <HomePage />

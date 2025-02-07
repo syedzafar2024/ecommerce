@@ -15,7 +15,6 @@ export default function Cart() {
       <HeaderBanner
         title="Cart"
         breadcrumbs={breadcrumbs}
-        backgroundImage="/img/Rectangle 1.png"
       />
       <CartPage />
       <HomePage />

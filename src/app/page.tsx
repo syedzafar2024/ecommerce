@@ -8,25 +8,8 @@ import HeroBanner from "@/components/HeroBanner";
 import BlogList from "@/components/BlogList";
 import InstagramSection from "@/components/InstagramSection";
 import Footer from "@/components/Footer";
-import { client } from "../sanity/lib/sanity";
 
 export default async function Home() {
-  // Fetch data directly in the Server Component
-  const products = await client.fetch(`
-    *[_type == "product"] {
-      _id,
-      name,
-      slug,
-      price,
-      description,
-      "imageUrl": imagePath.asset->url,
-      discountPercentage,
-      isFeaturedProduct,
-      stockLevel,
-      category
-    }
-  `);
-
   return (
     <div className="items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-mygray">
       <Navbar />
@@ -34,17 +17,6 @@ export default async function Home() {
       <CardList />
       <div>
         <h1>Products</h1>
-        {/* <ul>
-          {products.map((product:any) => (
-            <li key={product._id}>
-              <h2>{product.name}</h2>
-              <p>{product.description}</p>
-              <p>Price: ${product.price}</p>
-              <img src={product.imageUrl} alt={product.name} />
-              <p>Category: {product.category}</p>
-            </li>
-          ))}
-        </ul> */}
       </div>
 
       <SectionHeader />

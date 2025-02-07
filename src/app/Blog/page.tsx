@@ -22,7 +22,6 @@ export default function Blog(): React.JSX.Element {
       <HeaderBanner
         title="Blog"
         breadcrumbs={breadcrumbs}
-    
       />
       <div className="mt-20 flex flex-wrap lg:flex-nowrap mr-10">
         <div className="left side ">
